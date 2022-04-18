@@ -29,6 +29,8 @@ nav ul li{float: left; margin: 20px;}
 .util::after{display: block; content: ""; clear: both;}
 .util ul li{float: right; margin: 20px;  display: inline-block;}
 
+.event {color: orange;}
+.nike {color: orange;}
 .event:hover {color: rgb(106, 214, 200); transition: 1s;}
 .nike:hover {cursor: pointer; color: rgb(106, 214, 200); transition: 1s;}
 
