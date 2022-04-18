@@ -12,19 +12,20 @@
 *{margin: 0; padding: 0;}
 ul{list-style: none;}
 a{color: #fff; text-decoration: none;}
-p{color: #fff;}
+p, h6, .exc a{color: #fff;}
 .inner{width: 100%; margin: 0 auto;}
+footer a{color: #aaa;}
 
 section{margin: 0; padding: 0;}
 
 /*헤더*/
 header{width: 100%; background-color: #111;}
 header .inner::after, header .inner::before{display: block; content: ""; clear: both;}
-.logo{float: left; padding-left: 98px; display: inline-block;}
-nav{margin: 0 auto; text-align: center; display: inline-block; padding-top: 10px; padding-left: 20%;}
+.logo{float: left; padding-left: 5%/*98px*/; display: inline-block;}
+nav{margin: 0 auto; text-align: center; display: inline-block; padding-top: 10px; padding-left: 25%;}
 nav ul::after{display: block; content: ""; clear: both;}
 nav ul li{float: left; margin: 20px;}
-.util{float: right; padding-right: 98px; display: inline-block; padding-top: 10px;}
+.util{float: right; padding-right: 5%/*98px*/; display: inline-block; padding-top: 10px;}
 .util::after{display: block; content: ""; clear: both;}
 .util ul li{float: right; margin: 20px;  display: inline-block;}
 
@@ -33,28 +34,37 @@ nav ul li{float: left; margin: 20px;}
 .main1 img, .main2 img, .main3 img{width: 100%; display: block;}
 
 /*구매*/
-.con{background: linear-gradient(0deg, rgb(119, 119, 119), #202020); width: 100%; padding: 100px 0;}
-.con h1{text-align: center; color: #fff; margin: 100px 0;}
+.con{background: linear-gradient(0deg, rgb(85, 85, 85), #202020); width: 100%; padding: 100px 0;}
+.con h1{text-align: center; color: #fff; margin: 2% 0;}
 .con_prd::after{display: block; content: ""; clear: both;}
-.con_prd{width: 80%; margin: 0 auto; margin-bottom: 50px;}
+.con_prd{width: 80%; margin: 0 auto; margin-bottom: 5%;}
 .con_prd div{float: left; width: 20%; margin-top: 10%; margin-left: 20%;}
 .con_prd .con2{margin-left: 0%;}
 .con_prd div img{width: 100%;  transition: 1s;} /*화면이 작아지면 반응형으로 이미지들도 같이 줄어듦*/
-.con_prd div{color: #aaa; font-size: small; text-align: center;} 
+.con_prd div{color: #aaa; font-size: small; text-align: center;}
 
 .con_prd div:hover img{transform: scale(1.5);}
 .con_prd div:hover p{transform: scale(1);} /*나중에 보고 이미지랑 폰트 위치 고려해서 수정!!*/
 
 .con > p{font-size: 17px; text-align: center; padding: 10px; margin-bottom: 20px;}
 .con button{background-color: #111; color: #fff; width: 172px; height: 42px; border-radius: 10px; margin: auto; display: block; border: none; cursor: pointer;}
-.con button:hover{background-color: rgb(41, 41, 41); color: #fff;} /*색상도 보고 예쁘게 변경*/
+.con button:hover{background-color: rgb(39, 39, 39); transition: 1s; color: #fff;}
 
 /*이벤트*/
 .event img{width: 100%; display: block;}
 
 /*푸터*/
-footer{width: 100%; height: 140px; background-color: #000; text-align: center; font-size: 11px; padding-top: 90px;}
+footer{width: 100%; height: 100%; background-color: #000; text-align: center; font-size: 11px; }
+footer > .inner {padding: 5% 0;}
 footer > .inner > p{font-size: 11px;}
+.exc {width: 25%; display: inline-block; float: left; padding-left: 10%;}
+.exc > li {padding-bottom: 5px;}
+.exc2 {width: 25%; display: inline-block;}
+.exc2 > h6, li {padding-bottom: 5px;}
+.exc3 {width: 25%; display: inline-block; float: right; padding-right: 10%;}
+/*.social { width:25%; display: inline-block;}
+.social > li {float: right; padding-right: 10px; padding-top: 10px;}
+.social > li > a > img {width: 20px; }*/
 
 /**/
 /**/
